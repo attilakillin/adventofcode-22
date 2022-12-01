@@ -1,13 +1,2 @@
-pub struct Input {
-
-}
-
-impl Input {
-    pub fn new() -> Self {
-        return Input { };
-    }
-
-    pub fn read_lines(&self) {
-        
-    }
-}
+pub mod input;
+pub mod vectors;
