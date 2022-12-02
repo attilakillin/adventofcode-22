@@ -2,5 +2,6 @@
 
 members = [
     "aoc-common",
-    "day-01-uno"
+    "day-01-uno",
+    "day-02-dos"
 ]
