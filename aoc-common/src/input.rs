@@ -33,4 +33,9 @@ impl Input {
     pub fn lines_as_words(&self) -> Vec<Vec<String>> {
         return self.lines.iter().map(|s| s.split_whitespace().map(str::to_string).collect()).collect();
     }
+
+    /// Returns the read lines with each line converted into a list of chars.
+    pub fn lines_as_chars(&self) -> Vec<Vec<char>> {
+        return self.lines.iter().map(|s| s.chars().collect()).collect();
+    }
 }
