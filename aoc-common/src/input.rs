@@ -38,4 +38,9 @@ impl Input {
     pub fn lines_as_chars(&self) -> Vec<Vec<char>> {
         return self.lines.iter().map(|s| s.chars().collect()).collect();
     }
+
+    // Returns the read lines with each line split by the given character sequence.
+    pub fn lines_split_by(&self, split: &str) -> Vec<Vec<String>> {
+        return self.lines.iter().map(|s| s.split(split).map(str::to_string).collect()).collect();
+    }
 }
