@@ -43,4 +43,9 @@ impl Input {
     pub fn lines_split_by(&self, split: &str) -> Vec<Vec<String>> {
         return self.lines.iter().map(|s| s.split(split).map(str::to_string).collect()).collect();
     }
+
+    // Returns the lines as is.
+    pub fn lines(&self) -> Vec<String> {
+        return self.lines.clone();
+    }
 }
