@@ -48,4 +48,9 @@ impl Input {
     pub fn lines(&self) -> Vec<String> {
         return self.lines.clone();
     }
+
+    // Returns the copy of the first input line.
+    pub fn as_line(&self) -> String {
+        return self.lines[0].clone();
+    }
 }
