@@ -39,6 +39,11 @@ impl Input {
         return self.lines.iter().map(|s| s.chars().collect()).collect();
     }
 
+    /// Returns the read lines with each line converted into a list of digits.
+    pub fn lines_as_digit_matrix(&self) -> Vec<Vec<isize>> {
+        return self.lines.iter().map(|s| s.chars().map(|c| c.to_digit(10).unwrap() as isize).collect()).collect();
+    }
+
     // Returns the read lines with each line split by the given character sequence.
     pub fn lines_split_by(&self, split: &str) -> Vec<Vec<String>> {
         return self.lines.iter().map(|s| s.split(split).map(str::to_string).collect()).collect();
