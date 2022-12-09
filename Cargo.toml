@@ -9,5 +9,6 @@ members = [
     #"day-05-cinco",
     #"day-06-seis",
     #"day-07-siete",
-    "day-08-ocho"
+    #"day-08-ocho",
+    "day-09-nueve"
 ]
